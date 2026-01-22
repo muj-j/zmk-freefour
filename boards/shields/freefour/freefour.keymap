@@ -65,6 +65,7 @@
                 &kp LSHFT   &kp A     &kp S     &kp D     &kp F          &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
                 &kp LCTRL   &kp Z     &kp X     &kp C     &kp V          &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
                                                 &kp B     &kp N          &tog 4    &tog 4 
+            >;
         };
     };
  };
