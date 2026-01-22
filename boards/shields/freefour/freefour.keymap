@@ -14,8 +14,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            bindings = <sk>, <kp>;
+            tapping-term-ms = <250>;
+            bindings = <&sk>, <&kp>;
             display-name = "Fn-Tap";
         };
     };
