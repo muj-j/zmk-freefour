@@ -1,0 +1,11 @@
+file_format: "1"
+id: freefour
+name: freefour
+type: shield
+url: https://github.com/muj-j/zmk-freefour/
+features:
+  - keys
+siblings:
+  - freefour_left
+  - freefour_right
+
