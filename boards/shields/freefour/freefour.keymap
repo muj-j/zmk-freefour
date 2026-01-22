@@ -61,10 +61,19 @@
 
         vg {
             bindings = <
-                &kp TAB     &kp Q     &kp W     &kp E     &kp R          &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
-                &kp LSHFT   &kp A     &kp S     &kp D     &kp F          &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
-                &kp LCTRL   &kp Z     &kp X     &kp C     &kp V          &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
-                                                &kp B     &kp N          &tog 4    &tog 4 
+                &kp TAB     &kp Q     &kp W     &kp E     &kp R          &kp Y     &kp U     &kp I     &kp O     &kp SLASH 
+                &kp LSHFT   &kp A     &kp S     &kp D     &kp F          &kp H     &kp J     &kp K     &kp L     &kp BSPC    
+                &kp LCTRL   &kp Z     &kp X     &kp C     &kp V          &kp N     &kp M     &kp COMMA &kp DOT   &kp ENTER      
+                                                &mo 5     &kp SPACE      &tog 4    &tog 4 
+            >;
+        };
+
+        vgn {
+            bindings = <
+                &kp F2      &kp N1    &kp N2    &kp N3    &kp N9         &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
+                &ft F3 F3   &kp N4    &kp N5    &kp N6    &kp N0         &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
+                &kp F5      &kp N7    &kp N8    &kp N8    &kp ENTER      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
+                                                &mo 5     &kp SPACE      &tog 4    &tog 4 
             >;
         };
     };
