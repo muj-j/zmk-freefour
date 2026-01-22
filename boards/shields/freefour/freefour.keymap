@@ -1,17 +1,48 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&sk {
+  release-after-ms = <2000>;
+}
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
+        base { // Layer 0
             bindings = <
-                &kp B     &kp L     &kp D     &kp C     &kp V     &kp J     &kp Y     &kp O     &kp U     &kp COMMA 
-                &kp N     &kp R     &kp T     &kp S     &kp G     &kp P     &kp H     &kp A     &kp E     &kp I     
-                &kp X     &kp Q     &kp M     &kp W     &kp Z     &kp K     &kp F     &kp APOS  &kp SEMI  &kp DOT   
-                                              &kp C     &kp LSHFT &kp SPACE &kp Y                                   
+                &kp B     &kp L     &kp D     &kp C     &kp V          &kp J     &kp Y     &kp O     &kp U     &kp COMMA 
+                &kp N     &kp R     &kp T     &kp S     &kp G          &kp P     &kp H     &kp A     &kp E     &kp I     
+                &kp X     &kp Q     &kp M     &kp W     &kp Z          &kp K     &kp F     &kp APOS  &kp SEMI  &kp DOT   
+                                              &mo 2     &kp LSHFT      &kp SPACE &mo 1                                   
             >;
         };
+
+        sym {
+            bindings = <
+                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  
+                &sk LSHFT &sk LCTRL &sk LALT  &sk LGUI  &kp GRAVE      &kp SLASH &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  
+                &kp ESC   &kp MINUS &kp UNDER &none     &kp TILDE      &kp QMARK &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  
+                                              &mo 3     &kp LSHFT      &kp SPACE &none                                   
+            >;
+        };
+
+        num {
+            bindings = <
+                &kp N1    &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    
+              &key_repeat &sk LCTRL &sk LALT  &sk LGUI  &sk LSHFT      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  
+                &undo     &redo     &copy     &paste    &tg 4          &back     &kp PG_DN &kp PG_UP &forward  &kp ENTER 
+                                              &none     &kp LSHFT      &kp SPACE &mo 3                                   
+            >;
+        };
+        
+        fn {
+            bindings = <
+                &kp F1    &kp F2    &kp F3    &kp F4    &kp F5         &kp F6     &kp F7       &kp F8       &kp F9     &kp F0    
+                &kp F11   &kp F12   &kp HOME  &kp END   &sk PSCRN      &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp DELETE
+                &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &tg 4         &bootloader &kp C_PP     &kp C_MUTE   &backtab   &kp TAB   
+                                              &none     &kp LSHFT      &kp SPACE  &none                                   
+            >;
+        }
     };
  };
