@@ -70,7 +70,7 @@
 
         vgn {
             bindings = <
-                &kp F2      &kp N1    &kp N2    &kp N3    &kp N9         &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
+                &kp ESC     &kp N1    &kp N2    &kp N3    &kp N9         &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
                 &ft F3 F3   &kp N4    &kp N5    &kp N6    &kp N0         &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
                 &kp F5      &kp N7    &kp N8    &kp N8    &kp ENTER      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
                                                 &none     &kp SPACE      &tog 4    &tog 4 
