@@ -78,9 +78,9 @@
 
         vgn {
             bindings = <
-                &kp ESC    &mt F1 N1  &mt F2 N2 &mt F3 N3 &mt F0 N0      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
+                &kp ESC    &mt F1 N1  &mt F2 N2 &mt F3 N3 &mt F10 N0      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4 
                 &sk F3     &mt F4 N4  &mt F5 N5 &mt F6 N6 &kp BSPC       &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
-                &kp F4     &mt F5 N5  &mt F8 N8 &mt F9 N9 &kp ENTER      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
+                &kp F11    &mt F5 N5  &mt F8 N8 &mt F9 N9 &kp ENTER      &tog 4    &tog 4    &tog 4    &tog 4    &tog 4    
                                                 &none     &kp SPACE      &tog 4    &tog 4 
             >;
         };
