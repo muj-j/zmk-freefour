@@ -6,6 +6,6 @@ url: https://github.com/muj-j/zmk-freefour/
 features:
   - keys
 siblings:
-  - freefour_left
-  - freefour_right
+  - freefour
+  - freefour_dongle
 
